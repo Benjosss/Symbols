@@ -39,7 +39,6 @@ class Main(FlowLauncher):
         SymbolData(["omega"], "ω", "Omega"),
         SymbolData(["ellipsis", "dots"], "…", "Points de suspension"),
         SymbolData(["dash", "mdash"], "—", "Tiret cadratin"),
-        SymbolData(["ndash"], "–", "Tiret demi-cadratin"),
         SymbolData(["section"], "§", "Paragraphe"),
         SymbolData(["not", "equal"], "≠", "Différent de"),
         SymbolData(["approximately", "approx"], "≈", "Approximativement"),
