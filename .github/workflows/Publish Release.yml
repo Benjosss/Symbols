@@ -36,8 +36,25 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r ./requirements.txt -t ./lib
+          mkdir -p lib
+          echo "=== Installing flowlauncher ==="
+          pip install flowlauncher -t ./lib
+          echo "=== Installing pyperclip ==="
+          pip install pyperclip -t ./lib
+          echo "=== Contents of lib folder ==="
+          ls -la ./lib
+          echo "=== Checking for flowlauncher ==="
+          if [ -d "./lib/flowlauncher" ]; then
+            echo "✓ flowlauncher found"
+            ls -la ./lib/flowlauncher
+          else
+            echo "✗ flowlauncher NOT found"
+            exit 1
+          fi
+          echo "=== Creating zip ==="
           zip -r Flow.Launcher.Plugin.Symbols.zip . -x '*.git*'
+          echo "=== Zip contents - checking lib ==="
+          unzip -l Flow.Launcher.Plugin.Symbols.zip | grep "lib/"
           
       - name: Publish
         if: success()
