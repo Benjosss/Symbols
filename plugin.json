@@ -4,9 +4,9 @@
     "Name": "Symbols",
     "Description": "Copy useful symbols for your notes",
     "Author": "Benjosss",
-    "Version": "1.0.2",
+    "Version": "1.1.0",
     "Language": "python",
-    "Website": "https://github.com/Benjosss/Symbols",
+    "Website": "https://github.com/Benjosss/Flow.Launcher.Plugin.Symbols.git",
     "IcoPath": "assets\\app.png",
     "ExecuteFileName": "main.py"
 }
