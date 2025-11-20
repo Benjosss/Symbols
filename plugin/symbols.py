@@ -12,7 +12,7 @@ class SymbolData:
 
 class Main(FlowLauncher):
     # Dictionnary
-    symbols = [
+    SYMBOLS = [
         # Arrows
         SymbolData(["arrow", "right"], "→", "Arrow right"),
         SymbolData(["arrow", "left"], "←", "Arrow left"),
